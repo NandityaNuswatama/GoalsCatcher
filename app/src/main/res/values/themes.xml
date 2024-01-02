@@ -1,9 +1,26 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
+<resources>
     <!-- Base application theme. -->
-    <style name="Base.Theme.GoalsCatcher" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    <style name="Base.Theme.GoalsCatcher" parent="Theme.MaterialComponents.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorSurface">@color/colorSurface</item>
+        <item name="colorSecondary">@color/colorPrimaryLight</item>
+        <item name="android:forceDarkAllowed">false</item>
+        <item name="android:statusBarColor">@color/colorPrimary</item>
+        <item name="bottomSheetDialogTheme">@style/BottomSheetTheme</item>
     </style>
 
-    <style name="Theme.GoalsCatcher" parent="Base.Theme.GoalsCatcher" />
+    <style name="Theme.GoalsCatcher" parent="Base.Theme.GoalsCatcher">
+
+    </style>
+
+    <style name="BottomSheetStyle" parent="Widget.MaterialComponents.BottomSheet">
+        <item name="android:background">@drawable/bg_bottom_sheet</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="BottomSheetTheme" parent="Theme.MaterialComponents.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/BottomSheetStyle</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowSoftInputMode">adjustResize</item>
+    </style>
 </resources>

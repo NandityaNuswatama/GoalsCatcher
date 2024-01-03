@@ -6,7 +6,12 @@
     android:layout_height="match_parent"
     tools:context=".view.MainActivity">
 
+    <include
+        android:id="@+id/toolbarHome"
+        layout="@layout/layout_toolbar" />
+
     <TextView
+        style="@style/TextBold"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Hello World!"

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="TextBold">
+        <item name="android:fontFamily">@font/proza_libre_bold</item>
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+    <style name="TextSemiBold">
+        <item name="android:fontFamily">@font/proza_libre_semibold</item>
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+    <style name="TextMedium">
+        <item name="android:fontFamily">@font/proza_libre_medium</item>
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+    <style name="TextRegular">
+        <item name="android:fontFamily">@font/proza_libre</item>
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+</resources>

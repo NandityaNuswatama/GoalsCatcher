@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/proza_libre_bold</item>
+        <item>@font/proza_libre_medium</item>
+        <item>@font/proza_libre_semibold</item>
+    </array>
+</resources>

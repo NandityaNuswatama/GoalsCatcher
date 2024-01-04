@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     style="@style/BottomSheetStyle"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:paddingHorizontal="16dp"
+    android:paddingTop="20dp"
+    android:paddingBottom="24dp">
 
     <FrameLayout
         android:layout_width="match_parent"
@@ -33,5 +37,61 @@
             tools:text="Title" />
     </FrameLayout>
 
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:cardBackgroundColor="@color/colorPrimaryVeryLight"
+        app:cardCornerRadius="16dp"
+        app:contentPadding="8dp">
 
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvInfo"
+            style="@style/TextMedium.Primary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_info_24"
+            android:drawablePadding="8dp"
+            android:drawableTint="@color/colorPrimary"
+            android:ellipsize="end"
+            android:gravity="start|center_vertical"
+            android:maxLines="2" />
+
+    </androidx.cardview.widget.CardView>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilInput"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:boxCornerRadiusBottomEnd="22dp"
+        app:boxCornerRadiusBottomStart="22dp"
+        app:boxCornerRadiusTopEnd="22dp"
+        app:boxCornerRadiusTopStart="22dp"
+        app:boxStrokeColor="@color/selector_white_white40"
+        app:hintTextColor="@color/selector_white_transparent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorWhite"
+            android:textCursorDrawable="@null"
+            tools:hint="Input Text" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnDone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:fontFamily="@font/proza_libre_semibold"
+        android:paddingVertical="12dp"
+        android:text="@string/label_done"
+        android:textAllCaps="false"
+        android:textColor="@color/colorWhite"
+        app:cornerRadius="20dp" />
 </LinearLayout>

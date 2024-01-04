@@ -7,7 +7,6 @@ import com.nandits.goalscatcher.data.InputTextConfig
 import com.nandits.goalscatcher.databinding.ActivityMainBinding
 import com.nandits.goalscatcher.utils.HawkKeys
 import com.nandits.goalscatcher.utils.emptyString
-import com.nandits.goalscatcher.utils.visible
 import com.nandits.goalscatcher.view.bottomsheet.InputTextBottomSheet
 import com.orhanobut.hawk.Hawk
 
@@ -21,18 +20,12 @@ class MainActivity : BaseActivity<ActivityMainBinding>() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        homeTitle = Hawk.get<String?>(HawkKeys.HOME_TITLE).orEmpty()
-
         initUi()
         initAction()
     }
 
     private fun initUi() {
-        with(binding) {
-            toolbarHome.apply {
-                tvToolbar.text = getString(R.string.format_user_goals, homeTitle.ifEmpty { "Your Name" })
-            }
-        }
+        setToolbarHome()
     }
 
     private fun initAction() {
@@ -47,9 +40,17 @@ class MainActivity : BaseActivity<ActivityMainBinding>() {
                     ),
                     doneListener = {
                         Hawk.put(HawkKeys.HOME_TITLE, it)
+                        setToolbarHome()
                     }
                 ).showBottomSheet(supportFragmentManager)
             }
+        }
+    }
+
+    private fun setToolbarHome() {
+        homeTitle = Hawk.get<String?>(HawkKeys.HOME_TITLE).orEmpty()
+        binding.toolbarHome.apply {
+            tvToolbar.text = getString(R.string.format_user_goals, homeTitle.ifEmpty { "Your Name" })
         }
     }
 }

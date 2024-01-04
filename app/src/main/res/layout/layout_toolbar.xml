@@ -33,11 +33,11 @@
         style="@style/TextSemiBold"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_marginHorizontal="64dp"
         android:foreground="?selectableItemBackground"
         android:ellipsize="end"
         android:gravity="center"
         android:maxLines="2"
-        android:paddingHorizontal="64dp"
         android:textSize="16sp"
         tools:text="@tools:sample/lorem" />
 </FrameLayout>

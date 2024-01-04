@@ -2,4 +2,6 @@
     <string name="app_name">Goals Catcher</string>
     <string name="format_user_goals">%s\'s Goals</string>
     <string name="label_enter_your_name">Enter Your Name</string>
+    <string name="message_can_use_emoji">You can use emoji to name your category</string>
+    <string name="label_done">Done</string>
 </resources>

@@ -41,10 +41,24 @@ class InputTextBottomSheet : BaseBottomSheetFragment<BottomSheetInputTextBinding
         with(binding) {
             tvTitle.text = config?.title
             btnClose.onlyVisibleIf(config?.isCloseable.default(false))
+            cvInfo.onlyVisibleIf(config?.info.default().isNotEmpty())
+            tvInfo.text = config?.info
+            edtInput.hint = config?.hint
+            edtInput.setText(config?.text)
         }
     }
 
     override fun initAction() {
+        with(binding) {
+            btnDone.setOnClickListener {
+                doneListener?.invoke(edtInput.text.toString())
+                dismiss()
+            }
 
+            btnClose.setOnClickListener {
+                closeListener?.invoke()
+                dismiss()
+            }
+        }
     }
 }

@@ -16,4 +16,7 @@
         <item name="android:fontFamily">@font/proza_libre</item>
         <item name="android:textColor">@color/colorWhite</item>
     </style>
+    <style name="TextMedium.Primary">
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
 </resources>

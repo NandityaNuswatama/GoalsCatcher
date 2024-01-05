@@ -6,6 +6,7 @@
     <color name="colorPrimaryVeryLight">#ECFFEF</color>
     <color name="colorSurface">#383838</color>
     <color name="colorSurfaceLight">#474747</color>
+    <color name="colorRedLight">#FF7575</color>
     <color name="colorBlack">#FF000000</color>
     <color name="colorWhite">#FFFFFFFF</color>
     <color name="colorTransparent">#00FFFFFF</color>

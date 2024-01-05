@@ -1,4 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <style name="PrimaryButtonStyle" parent="Widget.MaterialComponents.Button.UnelevatedButton">
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textAppearance">@style/TextSemiBold</item>
+        <item name="cornerRadius">16dp</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="DangerButtonStyle" parent="PrimaryButtonStyle">
+        <item name="android:backgroundTint">@color/colorTransparent</item>
+        <item name="android:foreground">?selectableItemBackground</item>
+        <item name="android:textColor">@color/colorRedLight</item>
+    </style>
 </resources>

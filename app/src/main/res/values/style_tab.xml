@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="TabLayoutStyle" parent="Widget.MaterialComponents.TabLayout">
+        <item name="android:background">@color/colorTransparent</item>
+        <item name="tabBackground">@drawable/selector_tab</item>
+        <item name="tabGravity">fill</item>
+        <item name="tabIndicatorColor">@color/colorTransparent</item>
+        <item name="tabIndicatorHeight">0dp</item>
+        <item name="tabMode">scrollable</item>
+        <item name="tabSelectedTextColor">@color/colorWhite</item>
+        <item name="tabTextColor">@color/colorWhite</item>
+        <item name="android:clipToPadding">false</item>
+    </style>
+</resources>

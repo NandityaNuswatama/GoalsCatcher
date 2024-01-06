@@ -7,4 +7,11 @@
     <string name="label_cancel">Cancel</string>
     <string name="label_ok">OK</string>
     <string name="label_select_year">Select Year</string>
+    <string name="label_delete_year">Delete Year</string>
+    <string name="label_add_category">Add Category</string>
+    <string name="label_enter_category_name">Enter category name</string>
+    <string name="message_info_add_category">You can use emoji to name your category</string>
+    <string name="label_delete">delete</string>
+    <string name="label_add">add</string>
+    <string name="label_details">details</string>
 </resources>

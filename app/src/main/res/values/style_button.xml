@@ -7,11 +7,28 @@
         <item name="android:textAppearance">@style/TextSemiBold</item>
         <item name="cornerRadius">16dp</item>
         <item name="android:textSize">16sp</item>
+        <item name="iconTint">@color/colorWhite</item>
     </style>
 
     <style name="DangerButtonStyle" parent="PrimaryButtonStyle">
         <item name="android:backgroundTint">@color/colorTransparent</item>
         <item name="android:foreground">?selectableItemBackground</item>
         <item name="android:textColor">@color/colorRedLight</item>
+    </style>
+
+    <style name="PrimaryLightButtonStyle" parent="PrimaryButtonStyle">
+        <item name="android:backgroundTint">@color/colorPrimaryLight</item>
+    </style>
+
+    <style name="PrimaryOutlinedButtonStyle" parent="Widget.MaterialComponents.Button.UnelevatedButton">
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textAppearance">@style/TextSemiBold</item>
+        <item name="cornerRadius">16dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="iconTint">@color/colorWhite</item>
+        <item name="android:backgroundTint">@color/colorWhite</item>
+        <item name="strokeColor">@color/colorPrimary</item>
+        <item name="strokeWidth">1dp</item>
     </style>
 </resources>

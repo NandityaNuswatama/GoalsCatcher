@@ -16,6 +16,12 @@
         <item name="android:textColor">@color/colorRedLight</item>
     </style>
 
+    <style name="WhiteDangerButtonStyle" parent="PrimaryButtonStyle">
+        <item name="android:backgroundTint">@color/colorWhite</item>
+        <item name="android:foreground">?selectableItemBackground</item>
+        <item name="android:textColor">@color/colorRed</item>
+    </style>
+
     <style name="PrimaryLightButtonStyle" parent="PrimaryButtonStyle">
         <item name="android:backgroundTint">@color/colorPrimaryLight</item>
     </style>

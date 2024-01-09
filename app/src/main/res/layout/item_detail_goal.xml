@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/colorSurfaceLight"
+        app:cardCornerRadius="16dp"
+        app:contentPadding="8dp"
+        app:strokeColor="@color/selector_transparent_red_light">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/imgGoal"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:scaleType="centerCrop"
+                android:visibility="gone"
+                app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.16"
+                tools:src="@tools:sample/avatars" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imgPlaceholder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/img_placeholder" />
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/cbGoal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:button="@drawable/selector_check_box"
+                android:ellipsize="end"
+                android:maxLines="3"
+                android:padding="12dp"
+                android:textAppearance="@style/TextBold"
+                android:textSize="14sp"
+                tools:text="@tools:sample/lorem/random" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+</LinearLayout>

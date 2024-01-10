@@ -12,5 +12,5 @@ data class Goal(
     val isAchieved: Boolean = false,
     val goalTitle: String = emptyString(),
     val achievedDate: String = emptyString(),
-    val photos: String = emptyString()
+    val photos: MutableList<String> = mutableListOf()
 ) : Parcelable

@@ -8,7 +8,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.nandits.goalscatcher.data.Goal
 import com.nandits.goalscatcher.databinding.ItemGoalsBinding
 
-class GoalAdapter(private val callback: GoalAdapterListener) :
+class GoalAdapter() :
     ListAdapter<Goal, GoalAdapter.ViewHolder>(GoalComparator) {
 
     inner class ViewHolder(private val binding: ItemGoalsBinding) : RecyclerView.ViewHolder(binding.root) {
@@ -17,7 +17,7 @@ class GoalAdapter(private val callback: GoalAdapterListener) :
                 tvGoal.text = data.goalTitle
                 cbGoal.isChecked = data.isAchieved
                 cbGoal.setOnCheckedChangeListener { _, isChecked ->
-                    callback.onCheckBoxCheckChanged(isChecked)
+//                    callback.onCheckBoxCheckChanged(isChecked)
                 }
             }
         }

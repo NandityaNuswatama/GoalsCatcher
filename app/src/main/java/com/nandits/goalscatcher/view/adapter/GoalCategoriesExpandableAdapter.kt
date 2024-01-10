@@ -16,7 +16,7 @@ import com.nandits.goalscatcher.utils.onlyVisibleIf
 class GoalCategoriesExpandableAdapter(private val callback: GoalCategoriesExpandableListeners) :
     ListAdapter<SelectableItem<Category>, GoalCategoriesExpandableAdapter.ViewHolder>(CategoryComparator), GoalAdapterListener {
 
-    private val goalAdapter by lazy { GoalAdapter(this) }
+    private val goalAdapter by lazy { GoalAdapter() }
     private var totalAchieved = 0
 
     inner class ViewHolder(private val binding: ItemGoalsCategoryBinding) : RecyclerView.ViewHolder(binding.root) {

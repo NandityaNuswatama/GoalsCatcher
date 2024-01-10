@@ -1,9 +1,7 @@
 package com.nandits.goalscatcher.view
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.nandits.goalscatcher.R
 import com.nandits.goalscatcher.base.BaseActivity
 import com.nandits.goalscatcher.data.Goal
 import com.nandits.goalscatcher.databinding.ActivityDetailGoalBinding

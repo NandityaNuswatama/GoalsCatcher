@@ -47,6 +47,8 @@ dependencies {
     implementation("com.orhanobut:hawk:2.0.1")
     implementation("com.squareup.retrofit2:converter-gson:2.9.0")
     implementation("com.asksira.android:loopingviewpager:1.4.1")
+    implementation("com.github.yalantis:ucrop:2.2.8")
+    implementation("com.karumi:dexter:6.2.3")
 
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
